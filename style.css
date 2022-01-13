@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+  font-family: poppins;
+  transition: 0.5s;
+}
+body{
+  background-color: #222;
+  color: white;
+  margin: 0px;
+}
+nav{
+  width: 90%;
+  height: 50px;
+  background-color: #333;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+  margin: 10px auto 0px auto;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button{
+  background-color: #444;
+  border: 0px;
+  border-radius: 6px;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button:hover{
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.0);
+}
+#sort{
+  display: flex;
+}
+#dir{
+  margin-left: 5px;
+}
+#legend{
+  display: flex;
+  align-items: center;
+}
+#readlege{
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(108.76deg, #7400B8 0%, #4EA8DE 100%);
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#nreadlege{
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  background: linear-gradient(108.76deg, #555 0%, #999 100%);
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+section{
+  min-width: max-content;
+  max-width: 90%;
+  height: max-content;
+  padding: 10px 20px 10px 20px;
+  margin: 10px auto 0px auto;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.card{
+  min-width: 29.8%;
+  min-height: 230px;
+  margin-right: 1.612%;
+  margin-top: 1%;
+  max-height: max-content;
+  padding: 5px 10px 5px 10px;
+  background: linear-gradient(108.76deg, #555 0%, #999 100%);
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+.closeBtn{
+  float: right;
+  color: red;
+  cursor: pointer;
+}
+#closeBtn{
+  position: fixed;
+  top: 10px;
+  right: 5px;
+  color: red;
+  font-size: 21px;
+  font-weight: 600;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.read{
+  background: linear-gradient(108.76deg, #7400B8 0%, #4EA8DE 100%);
+}
+h2{
+  color: white;
+  font-weight: 600;
+}
+p{
+  color: #ddd;
+  font-weight: 500;
+}
+input[type="checkbox"]{
+  height: 20px;
+  margin-left: 5px;
+  float: right;
+}
+#add{
+  height: 50px;
+  width: 50px;
+  border-radius: 1000px;
+  background: linear-gradient(108.76deg, #7400B8 0%, #4EA8DE 100%);
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#add:hover{
+  transform: rotateZ(90deg);
+}
+#mask{
+  height: 100vh;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+#prompt{
+  height: max-content;
+  width: max-content;
+  margin: auto auto auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #555;
+  border-radius: 6px;
+  padding: 20px;
+}
+#prompt input{
+  height: 40px;
+  width: 400px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 0px;
+  padding-left: 10px;
+}
+#submit{
+  height: 50px;
+  width: 400px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 0px;
+  padding-left: 10px;
+}
+
+@media (max-width: 1171px){
+  .card{
+    width: 45%;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  section{
+    width: 100%;
+    margin: 10px auto 0px auto;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 813px){
+  .card{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+  section{
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 440px){
+  #legend{
+    display: none;
+  }
+}
